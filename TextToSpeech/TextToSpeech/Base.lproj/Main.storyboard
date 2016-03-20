@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="zeM-kr-YEx">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="un9-da-hSz">
+            <objects>
+                <tableViewController id="zeM-kr-YEx" customClass="ViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="81C-ug-H3C">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="left" rowHeight="100" id="LGh-Ps-iAG" customClass="CXStringTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="600" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LGh-Ps-iAG" id="9VH-ZI-Cdg">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble_left" translatesAutoresizingMaskIntoConstraints="NO" id="78j-KO-MH1">
+                                            <rect key="frame" x="10" y="10" width="490" height="79.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JdZ-od-mTP">
+                                            <rect key="frame" x="28" y="18" width="444" height="63.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="JdZ-od-mTP" firstAttribute="leading" secondItem="9VH-ZI-Cdg" secondAttribute="leadingMargin" constant="20" id="2Av-ab-94A"/>
+                                        <constraint firstAttribute="trailing" secondItem="78j-KO-MH1" secondAttribute="trailing" constant="100" id="51A-8V-WqA"/>
+                                        <constraint firstAttribute="bottom" secondItem="78j-KO-MH1" secondAttribute="bottom" constant="10" id="AT8-4u-vdM"/>
+                                        <constraint firstItem="JdZ-od-mTP" firstAttribute="top" secondItem="9VH-ZI-Cdg" secondAttribute="topMargin" constant="10" id="Yh9-8B-p1Z"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="JdZ-od-mTP" secondAttribute="trailing" constant="120" id="Z84-l3-WWt"/>
+                                        <constraint firstItem="78j-KO-MH1" firstAttribute="top" secondItem="9VH-ZI-Cdg" secondAttribute="top" constant="10" id="aTu-IC-gxd"/>
+                                        <constraint firstItem="78j-KO-MH1" firstAttribute="leading" secondItem="9VH-ZI-Cdg" secondAttribute="leading" constant="10" id="mXj-dc-GPY"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="JdZ-od-mTP" secondAttribute="bottom" constant="10" id="xxH-EB-kqQ"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleLabel" destination="JdZ-od-mTP" id="4KP-5s-IJl"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="right" rowHeight="100" id="wyl-QB-Kln" customClass="CXStringTableViewCell">
+                                <rect key="frame" x="0.0" y="128" width="600" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wyl-QB-Kln" id="Vbe-aE-8yN">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="100"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bubble_right" translatesAutoresizingMaskIntoConstraints="NO" id="xoc-cI-Fee">
+                                            <rect key="frame" x="100" y="10" width="490" height="79.5"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bev-Xa-xZI">
+                                            <rect key="frame" x="120" y="10" width="450" height="79.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="Bev-Xa-xZI" firstAttribute="top" secondItem="Vbe-aE-8yN" secondAttribute="top" constant="10" id="3ks-0x-Twt"/>
+                                        <constraint firstItem="Bev-Xa-xZI" firstAttribute="leading" secondItem="Vbe-aE-8yN" secondAttribute="leading" constant="120" id="7eh-LT-Wes"/>
+                                        <constraint firstAttribute="trailing" secondItem="xoc-cI-Fee" secondAttribute="trailing" constant="10" id="KLd-A3-ShD"/>
+                                        <constraint firstAttribute="bottom" secondItem="Bev-Xa-xZI" secondAttribute="bottom" constant="10" id="QyE-NI-FEu"/>
+                                        <constraint firstItem="xoc-cI-Fee" firstAttribute="leading" secondItem="Vbe-aE-8yN" secondAttribute="leading" constant="100" id="YUy-wP-Jnt"/>
+                                        <constraint firstAttribute="trailing" secondItem="Bev-Xa-xZI" secondAttribute="trailing" constant="30" id="hRe-bw-fPP"/>
+                                        <constraint firstItem="xoc-cI-Fee" firstAttribute="top" secondItem="Vbe-aE-8yN" secondAttribute="top" constant="10" id="jQ9-Nz-VLA"/>
+                                        <constraint firstAttribute="bottom" secondItem="xoc-cI-Fee" secondAttribute="bottom" constant="10" id="kGi-25-Edg"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="titleLabel" destination="Bev-Xa-xZI" id="jd4-20-6s2"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="zeM-kr-YEx" id="IM1-HL-qN0"/>
+                            <outlet property="delegate" destination="zeM-kr-YEx" id="AD5-w9-IQn"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Qh-sC-arl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="430" y="-47"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bubble_left" width="156" height="35"/>
+        <image name="bubble_right" width="156" height="35"/>
+    </resources>
+</document>
