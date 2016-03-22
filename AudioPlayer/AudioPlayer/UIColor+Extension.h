@@ -10,4 +10,10 @@
 
 @interface UIColor (Extension)
 
+// 提高亮度
+- (UIColor *)lighterColor;
+
+// 降低亮度
+- (UIColor *)darkerColor;
+
 @end

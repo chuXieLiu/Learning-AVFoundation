@@ -13,6 +13,11 @@
 		F9DF3C9F1C9F93F200EE9001 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9DF3C9D1C9F93F200EE9001 /* Main.storyboard */; };
 		F9DF3CA11C9F93F200EE9001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9DF3CA01C9F93F200EE9001 /* Assets.xcassets */; };
 		F9DF3CA41C9F93F300EE9001 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9DF3CA21C9F93F300EE9001 /* LaunchScreen.storyboard */; };
+		F9DF3CAD1C9F9E3900EE9001 /* CXPlayerButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DF3CAC1C9F9E3900EE9001 /* CXPlayerButton.m */; };
+		F9DF3CB01C9F9FE300EE9001 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = F9DF3CAF1C9F9FE300EE9001 /* UIColor+Extension.m */; };
+		F9DF3CB41C9FCD4F00EE9001 /* bass.caf in Resources */ = {isa = PBXBuildFile; fileRef = F9DF3CB11C9FCD4F00EE9001 /* bass.caf */; };
+		F9DF3CB51C9FCD4F00EE9001 /* drums.caf in Resources */ = {isa = PBXBuildFile; fileRef = F9DF3CB21C9FCD4F00EE9001 /* drums.caf */; };
+		F9DF3CB61C9FCD4F00EE9001 /* guitar.caf in Resources */ = {isa = PBXBuildFile; fileRef = F9DF3CB31C9FCD4F00EE9001 /* guitar.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,13 @@
 		F9DF3CA01C9F93F200EE9001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9DF3CA31C9F93F300EE9001 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9DF3CA51C9F93F300EE9001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9DF3CAB1C9F9E3900EE9001 /* CXPlayerButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXPlayerButton.h; sourceTree = "<group>"; };
+		F9DF3CAC1C9F9E3900EE9001 /* CXPlayerButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXPlayerButton.m; sourceTree = "<group>"; };
+		F9DF3CAE1C9F9FE300EE9001 /* UIColor+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		F9DF3CAF1C9F9FE300EE9001 /* UIColor+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		F9DF3CB11C9FCD4F00EE9001 /* bass.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = bass.caf; sourceTree = "<group>"; };
+		F9DF3CB21C9FCD4F00EE9001 /* drums.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = drums.caf; sourceTree = "<group>"; };
+		F9DF3CB31C9FCD4F00EE9001 /* guitar.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = guitar.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +79,10 @@
 				F9DF3CA21C9F93F300EE9001 /* LaunchScreen.storyboard */,
 				F9DF3CA51C9F93F300EE9001 /* Info.plist */,
 				F9DF3C941C9F93F200EE9001 /* Supporting Files */,
+				F9DF3CAB1C9F9E3900EE9001 /* CXPlayerButton.h */,
+				F9DF3CAC1C9F9E3900EE9001 /* CXPlayerButton.m */,
+				F9DF3CAE1C9F9FE300EE9001 /* UIColor+Extension.h */,
+				F9DF3CAF1C9F9FE300EE9001 /* UIColor+Extension.m */,
 			);
 			path = AudioPlayer;
 			sourceTree = "<group>";
@@ -74,6 +90,9 @@
 		F9DF3C941C9F93F200EE9001 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F9DF3CB11C9FCD4F00EE9001 /* bass.caf */,
+				F9DF3CB21C9FCD4F00EE9001 /* drums.caf */,
+				F9DF3CB31C9FCD4F00EE9001 /* guitar.caf */,
 				F9DF3C951C9F93F200EE9001 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -136,7 +155,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9DF3CB61C9FCD4F00EE9001 /* guitar.caf in Resources */,
+				F9DF3CB51C9FCD4F00EE9001 /* drums.caf in Resources */,
 				F9DF3CA41C9F93F300EE9001 /* LaunchScreen.storyboard in Resources */,
+				F9DF3CB41C9FCD4F00EE9001 /* bass.caf in Resources */,
 				F9DF3CA11C9F93F200EE9001 /* Assets.xcassets in Resources */,
 				F9DF3C9F1C9F93F200EE9001 /* Main.storyboard in Resources */,
 			);
@@ -151,7 +173,9 @@
 			files = (
 				F9DF3C9C1C9F93F200EE9001 /* ViewController.m in Sources */,
 				F9DF3C991C9F93F200EE9001 /* AppDelegate.m in Sources */,
+				F9DF3CB01C9F9FE300EE9001 /* UIColor+Extension.m in Sources */,
 				F9DF3C961C9F93F200EE9001 /* main.m in Sources */,
+				F9DF3CAD1C9F9E3900EE9001 /* CXPlayerButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,6 +286,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AudioPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CX.AudioPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -273,6 +298,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AudioPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = CX.AudioPlayer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
